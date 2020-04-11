@@ -16,14 +16,12 @@ agent none
             steps{   
                     
             checkout scm
-                
+            bat '${JAVA} Hello.java'
                 
             
             }
             
-            steps{
-                ${JAVA} Hello.java
-            }
+             
         
         
         
