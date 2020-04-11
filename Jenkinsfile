@@ -11,7 +11,7 @@ agent none
             
             def maven_home=tool 'maven'
             checkout scm
-            bat """
+            bat ""
             mkdir build
             cd build    
             
