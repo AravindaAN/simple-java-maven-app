@@ -15,7 +15,7 @@ agent none
             mkdir build
             cd build    
             
-            ${maven_home}\\bin\\mvn clean
+           
                 
             
             }
