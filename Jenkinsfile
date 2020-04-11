@@ -6,12 +6,12 @@ agent none
     
         stage ('build'){
         
-           
+            steps{   
           agent any
             
             checkout scm
             
-            
+            }
         
         
         
