@@ -6,12 +6,15 @@ agent none
     
         stage ('build'){
         agent any
-           
+           def maven_home=tool 'maven'
+           bat ""
+           mkdir build
+           cd build
             steps{   
             
-            def maven_home=tool 'maven'
+            
             checkout scm
-            bat ""
+           
            
            
                 
