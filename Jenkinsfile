@@ -13,4 +13,5 @@ pipeline {
    }
    // And next stages if you want to define further...
  } // End of stages
-} /
+} //
+}
