@@ -21,7 +21,7 @@ agent none
             
             }
             
-            step{
+            steps{
                 ${JAVA} Hello.java
             }
         
