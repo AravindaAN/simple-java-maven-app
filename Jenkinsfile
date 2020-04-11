@@ -6,10 +6,10 @@ pipeline {
           // Just print a Hello, Pipeline to the console
           echo "Hello, Pipeline!"
           // Compile a Java file. This requires JDKconfiguration from Jenkins
-          scm checkout
+          checkout scm 
           javac Hello.java
           // Execute the compiled Java binary called HelloWorld. This requires JDK configuration from Jenkins
-          java HelloWorld
+          java Hello
           // Executes the Apache Maven commands, clean then package. This requires Apache Maven configuration from Jenkins
           
    }
