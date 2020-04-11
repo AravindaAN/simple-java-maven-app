@@ -17,8 +17,12 @@ agent none
                     
             checkout scm
                 
-                ${JAVA} Hello.java
+                
             
+            }
+            
+            step{
+                ${JAVA} Hello.java
             }
         
         
