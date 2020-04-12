@@ -27,8 +27,15 @@ pipeline {
   	steps{
   	
   	bat 'javac Hello.java'
+    
   	
   	}
+    
+    stage("Execute"){
+    
+    bat 'java Hello'
+    
+    }
   
   
   }
