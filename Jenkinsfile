@@ -30,6 +30,7 @@ pipeline {
     
   	
   	}
+  }
     
     stage("Execute"){
     
@@ -47,4 +48,4 @@ pipeline {
   
  // End of stages
 } //
-}
+
