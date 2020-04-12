@@ -49,7 +49,7 @@ pipeline {
         steps{
         
       bat 'jar cf Hello.jar Hello.class'
-    	bat 'mkdir output'
+    	        
     	bat 'move Hello.jar output'
     
         }
