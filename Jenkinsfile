@@ -3,19 +3,15 @@ pipeline {
   stages {
     stage("Build") {
       tools{
-      
-      jdkhome= 'jdk'
+            jdkhome   'jdk_14'
+            mavenhome 'maven3.6.3' 
       }
        steps {
-          // Just print a Hello, Pipeline to the console
-          echo "Hello, Pipeline!"
-          // Compile a Java file. This requires JDKconfiguration from Jenkins
-          checkout scm 
-          bat "${jdkhome}/bin/javac Hello.java"
-          // Execute the compiled Java binary called HelloWorld. This requires JDK configuration from Jenkins
-          java Hello
-          // Executes the Apache Maven commands, clean then package. This requires Apache Maven configuration from Jenkins
-          
+         bat "'"
+         echo "PATH= ${PATH}"
+         echo "M2_HOME= ${M2_HOME}"
+         echo "jdkhome"
+         
    }
    // And next stages if you want to define further...
  } // End of stages
