@@ -12,6 +12,7 @@ pipeline {
          echo "PATH= ${PATH}"
          echo "M2_HOME= ${M2_HOME}"
          echo "JAVA_HOME=${JAVA_HOME}"
+         
       
           
          
@@ -24,7 +25,7 @@ pipeline {
   
   	steps{
   	
-  	bat 'javac Hello.java'
+  	bat '${JAVA_HOME}/bin/javac Hello.java'
   	
   	}
   
