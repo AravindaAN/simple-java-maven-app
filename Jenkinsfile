@@ -4,7 +4,7 @@ pipeline {
     stage("Build") {
       tools{
             jdkhome   'jdk_14'
-            mavenhome 'maven3.6.3' 
+            meven 'maven3.6.3' 
       }
        steps {
          bat "'"
