@@ -7,7 +7,7 @@ pipeline {
             maven 'maven3.6.3' 
       }
        steps {
-         bat "'"
+         bat ""
          echo "PATH= ${PATH}"
          echo "M2_HOME= ${M2_HOME}"
          echo "jdk"
