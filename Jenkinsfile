@@ -35,19 +35,33 @@ pipeline {
     stage("Execute"){
     
     steps{
+    
     bat 'java Hello'
-      
-    bat 'mvn clean compile test package'
+    
     }
 
     
     
     
     }
+    stage('Generate jar'){
+        
+        steps{
+        
+        bat 'jar cf Hello.jar Hello.class'
+    	bat 'mkdir output'
+    	bat 'cd output'
+    
+        }
+        
+        }
+    
+    }
+
   
   
   }
   
  // End of stages
-} //
+ //
 
