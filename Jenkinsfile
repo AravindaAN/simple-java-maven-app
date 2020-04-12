@@ -1,12 +1,13 @@
 pipeline {
   agent any
-  stages {
-  
-  stage("Initialize"){
    tools{
             jdk   'jdk_14'
             maven 'maven3.6.3' 
       }
+  stages {
+  
+  stage("Initialize"){
+  
        steps ("Initialize") {
          bat ""
          echo "PATH= ${PATH}"
