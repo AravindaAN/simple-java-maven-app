@@ -3,14 +3,14 @@ pipeline {
   stages {
     stage("Build") {
       tools{
-            jdkhome   'jdk_14'
-            meven 'maven3.6.3' 
+            jdk   'jdk_14'
+            maven 'maven3.6.3' 
       }
        steps {
          bat "'"
          echo "PATH= ${PATH}"
          echo "M2_HOME= ${M2_HOME}"
-         echo "jdkhome"
+         echo "jdk"
          
    }
    // And next stages if you want to define further...
