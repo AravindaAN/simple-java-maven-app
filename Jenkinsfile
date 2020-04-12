@@ -25,7 +25,7 @@ pipeline {
   
   	steps{
   	
-  	bat '${JAVA_HOME}/bin/javac Hello.java'
+  	bat 'JAVA_HOME/bin/javac Hello.java'
   	
   	}
   
