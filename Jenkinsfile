@@ -33,7 +33,12 @@ pipeline {
     
     stage("Execute"){
     
+    steps{
     bat 'java Hello'
+    }
+
+    
+    
     
     }
   
