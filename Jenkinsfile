@@ -36,6 +36,8 @@ pipeline {
     
     steps{
     bat 'java Hello'
+      
+    bat 'mvn clean build'
     }
 
     
