@@ -4,7 +4,7 @@ pipeline {
     stage("Build") {
       tools{
       
-      jdkhome= tool 'jdk'
+      jdkhome= 'jdk'
       }
        steps {
           // Just print a Hello, Pipeline to the console
